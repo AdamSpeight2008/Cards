@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Console_Read_Stuff
+</name>
+</assembly>
+<members>
+<member name="M:Console_Read_Stuff.Console_Timeouts.Example_Of_Using_The_Waits">
+	<summary>
+ Example Usage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Console_Read_Stuff.Console_Timeouts.WaitForKey(System.Int32,System.Boolean)">
+	<summary>
+ WaitForKey waits for user to press a key, or to timeout after a predertimined amount of time. 
+ </summary>
+	<param name="WaitUptoMs">How many millisecond to wait?</param>
+	<param name="shown">Is the keypress shown on the console?</param>
+	<returns>Return the ConsoleKeyInfo of the pressed key, or Nothing on timeout.</returns>
+	<remarks></remarks>
+</member><member name="M:Console_Read_Stuff.Console_Timeouts.WaitForYesNo(System.Int32,System.Boolean)">
+	<summary>
+ WaitForYesNo waits for user to press either (Y - Yes) or (N -&gt; No) key, or to timeout after a predertimined amount of time. 
+ </summary>
+	<param name="WaitUptoMs">How many millisecond to wait?</param>
+	<param name="shown">Is the keypress shown on the console?</param>
+	<returns>Return the ConsoleKeyInfo of the pressed key, or Nothing on timeout.</returns>
+	<remarks></remarks>
+</member><member name="M:Console_Read_Stuff.Console_Timeouts.WaitForLine(System.Int32)">
+	<summary>
+ WaitForLine let the user input a string, for predetermined amount of time.
+ </summary>
+	<param name="WaitUptoMs">How many millisecond to wait?</param>
+	<returns>Returns thestring entered.</returns>
+	<remarks></remarks>
+</member><member name="M:Console_Read_Stuff.Console_Stuff.Read_Decimal(System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Get a Decimal from the user.
+ </summary>
+	<param name="gapsize">The size of the gap, that digits can fit in. (&lt;0 = Any length  )</param>
+	<param name="AllowDecimalPoint">Allow a decimal point to be entered.</param>
+	<param name="AllowNegatives">Allow negative numbers.</param>
+	<returns>Return a decimal of equal value corrisponding to the digits enteres.</returns>
+	<remarks></remarks>
+</member><member name="M:Console_Read_Stuff.Console_Stuff.Read_BoundedValue``1(System.Collections.Generic.ICollection{``0})">
+	<summary>
+ Read_BoundedValue enables an easy way of selecting an element from a collection in a console application.
+ </summary>
+	<typeparam name="T">The type contained in the collection.</typeparam>
+	<param name="WhatCollection">Which collection should I use.</param>
+	<returns>The element select.</returns>
+	<exception cref="T:System.ArgumentNullException">Thrown when <paramref name="WhatCollection"/><c> Is Nothing</c></exception>
+	<exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="WhatCollection"/><c>.Count=0</c></exception>
+	<remarks></remarks>
+</member><member name="P:Console_Read_Stuff.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Console_Read_Stuff.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Console_Read_Stuff.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

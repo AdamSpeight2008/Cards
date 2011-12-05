@@ -1,0 +1,32 @@
+
+  ''' <summary>
+  ''' Example Usage
+  ''' </summary>
+  ''' <remarks></remarks>
+  Public Sub Example_Of_Using_The_Waits()
+    Dim c As ConsoleKeyInfo
+    Console.WriteLine("Press Any Key To Continue")
+    c = WaitForKey(2000)
+    Console.WriteLine("Exit (Y/N)?")
+    Dim Co As ConsoleKeyInfo = WaitForYesNo(1500, True)
+    If Co = Nothing Or Co.KeyChar = "Y" Then Exit Sub
+    Console.WriteLine("You have 10 seconds to input a string.")
+    Dim s = WaitForLine(4000)
+    If s IsNot Nothing Then Console.WriteLine("You wrote {0} chars.", s.Length)
+  End Sub
+
+
+  Public Sub Example_Read_BoundedValue()
+    Console.Write("Select a value: ")
+    Dim myList As New List(Of String) From {"Apple", "Banana", "Carrot", "Dog"}
+    Dim xx As String = Read_BoundedValue(myList)
+    Console.Write(Environment.NewLine)
+    Console.WriteLine(String.Format("You selected {0}.", xx))
+    Console.ReadKey()
+  End Sub
+
+  Public Sub Example_ReadDecimal()
+    Console.Write("Enter a number: ")
+    Dim x As Decimal = Read_Decimal()
+    Stop
+  End Sub
